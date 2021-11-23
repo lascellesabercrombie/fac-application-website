@@ -1,10 +1,11 @@
 let languageButton = document.getElementById("language-button")
-
+let para = document.getElementsByClassName(p)
 function changeLanguage() {
-    if (lang="en") {
-        Element.hidden = true;
+
+
+
     }
-    Element.hidden = false;
+    element.hidden = false;
 }
 
 languageButton.addEventListener('click', changeLanguage)
