@@ -1,5 +1,5 @@
 .hidden {
-    color:blue;
+    display: none;
 }
 .visible {
     display: block;

@@ -1,11 +1,11 @@
 let languageButton = document.getElementById("language-button")
-let paragraphs = document.querySelectorAll(".english")
-arrayparagraphs = Array.from(paragraphs);
-console.log(arrayparagraphs);
+let english = document.querySelectorAll(".english")
+let yiddish = document.querySelectorAll(".french")
 
 function changeLanguage() {
-    arrayparagraphs.classList.add("hidden");
-    return arrayparagraphs;
+    english.forEach((element) => {
+        element.classList.add("hidden")});
+      return english;
 }
 
 languageButton.addEventListener('click', changeLanguage)
