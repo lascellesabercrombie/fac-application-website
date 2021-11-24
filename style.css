@@ -1,2 +1,6 @@
-.hidden
-.visible
+.hidden {
+    color:blue;
+}
+.visible {
+    display: block;
+}
