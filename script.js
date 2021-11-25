@@ -1,14 +1,25 @@
 let languageButton = document.getElementById("language-button")
 let english = document.querySelectorAll(".english")
-let yiddish = document.querySelectorAll(".french")
+let yiddish = document.querySelectorAll(".yiddish")
 
-function changeLanguage() {
-    english.forEach((element) => {
-        element.classList.add("hidden")});
-      return english;
+function changeLanguage(language) {
+    language.forEach((element) => {
+      if (element.classList.contains("hidden")) {
+        element.classList.remove("hidden");
+        element.classList.add("visible");}
+      else {
+        element.classList.remove("visible");
+        element.classList.add("hidden");}
+      });
+      return language;
 }
 
-languageButton.addEventListener('click', changeLanguage)
+function langChanger() {
+  changeLanguage(english);
+  changeLanguage(yiddish);
+}
+
+languageButton.addEventListener('click', langChanger)
 
 /*a function that changes elements with 
 lang="en" to .hidden = true and lang="yi" 
