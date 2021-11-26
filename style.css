@@ -1,6 +1,21 @@
+body {
+    text-align: center;
+}
+
 .hidden {
     display: none;
 }
 .visible {
     display: block;
+}
+
+nav {
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+    text-space
 }
