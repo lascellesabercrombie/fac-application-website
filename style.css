@@ -56,14 +56,13 @@ ul a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row reverse;
-    
 }
 
 figure {
     background-color:lightblue;
     height: 10em;
     width: 10em;
-    padding: 10px;
+    padding: 1rem;
     object-fit: contain;
     text-align: center;
 }
