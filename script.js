@@ -10,13 +10,31 @@ function changeLanguage(language) {
       else {
         element.classList.remove("visible");
         element.classList.add("hidden");}
-      });
+      }
+
+      );
       return language;
+}
+
+function changeAlignment(language) {
+  language.forEach((element) => {
+
+    if (element.style.direction ="rtl"){
+      element.style.direction ="ltr";
+      element.style.textAlign = "left";
+    }
+    else{
+      element.style.direction ="rtl";
+      element.style.textAlign = "right";
+    }
+  })
+  return language;
 }
 
 function langChanger() {
   changeLanguage(english);
   changeLanguage(yiddish);
+  changeAlignment(english && yiddish);
 }
 
 languageButton.addEventListener('click', langChanger)
