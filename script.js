@@ -16,25 +16,26 @@ function changeLanguage(language) {
       return language;
 }
 
-function changeAlignment(language) {
-  language.forEach((element) => {
+// function changeAlignment(language) {
+//   language.forEach((element) => {
 
-    if (element.style.direction ="rtl"){
-      element.style.direction ="ltr";
-      element.style.textAlign = "left";
-    }
-    else{
-      element.style.direction ="rtl";
-      element.style.textAlign = "right";
-    }
-  })
-  return language;
-}
+//     if (element.style.direction ="rtl"){
+//       element.style.direction ="ltr";
+//       element.style.textAlign = "left";
+//     }
+//     else{
+//       element.style.direction ="rtl";
+//       element.classList.add("rightalign");
+//     }
+//   })
+//   return language;
+// }
 
 function langChanger() {
   changeLanguage(english);
   changeLanguage(yiddish);
-  changeAlignment(english && yiddish);
+  // changeAlignment(english)
+  // changeAlignment(yiddish);
 }
 
 languageButton.addEventListener('click', langChanger)

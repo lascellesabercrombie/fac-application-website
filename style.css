@@ -16,6 +16,16 @@ h1 {
     border: black solid;
 }
 
+.yiddish {
+    direction: rtl;
+    text-align: right;
+}
+
+.english {
+    direction: ltr;
+    text-align: left;
+}
+
 .hidden {
     display: none;
     
