@@ -11,7 +11,7 @@ header {
     border: black solid;
     color:rgb(207, 103, 17);
     background-color: white;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
 
@@ -24,13 +24,13 @@ h1 {
 }
 
 .button-wrapper {
-    /* display: inline; */
+    text-align: center;
 }
 button {
     background-color: #E4572E;
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
     margin: 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
     font-style: bold;
     border-style: 2px solid black;
     border-radius: 50%;
@@ -51,10 +51,12 @@ button {
 } */
 
 nav a {
-    /* display: block; */
+    display: inline;
     font-size: 1rem;
     padding: 1rem;
     text-transform: uppercase;
+    color: black;
+
 }
 
 
