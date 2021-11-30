@@ -8,6 +8,11 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Alex-Grafen-FAC-Application</title>
 </head>
+<!--problems: 
+  1) centered text resetting after lang switched back; 
+  2) big gaps where padding necessary for navigation; 
+  3) styling on project gallery (white on light blue) hard to read
+  4) should reorient flex with change of lang; -->
 
 <body>
     <header>
@@ -22,18 +27,17 @@
         </nav>  
         
     </header>
-<!--button to switch between Yiddish and English; should it
-actually be a toggle switch?-->
-<!--NB italics currently being weird with the Yiddish-->
 
+<main>
 <div id="intro">
   <h2><span class="english leftalign">Welcome to my application website!</span><span class="yiddish hidden">!שלום עליכם, מײַן גאַסט </span> </h2>
   <h3><span class="english">Follow one of the links below, or click the button to read on in Yiddish</span><span class="yiddish hidden">טו אַ קליק אױף די לינקס אָדער טו אַ קליק אױפֿן קנעפּל צו איבערזעצן אױף ענגליש</span></h3>
 </div>
 
 <div class="button-wrapper">
-  <button type="button" id="language-button"><span class="yiddish">א</span><span class="english hidden">a</span></button>
+  <button type="button" id="language-button"><span class="yiddish hidden">איבערזעץ אױף ענגליש</span><span class="english">translate to Yiddish</span></button>
 </div>
+
 
 <!--about me-->
 <div id="about-me">
@@ -128,7 +132,7 @@ actually be a toggle switch?-->
   </div>
 
 
-
+</main>
 <footer><!--do I want anything here?--> </footer>
 </body>
 <script src="script.js"></script>

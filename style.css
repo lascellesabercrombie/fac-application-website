@@ -2,7 +2,7 @@ body {
     direction: ltr;
     background-color: #495867;
     color: #F1F7ED;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
 }
@@ -14,7 +14,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-
+    
 }
 
 h1 {
@@ -23,32 +23,11 @@ h1 {
     text-transform: uppercase;
 }
 
-.button-wrapper {
-    text-align: center;
+
+nav {
+    display: flex;
+    justify-content: space-around;
 }
-button {
-    background-color: #E4572E;
-    padding: 1rem 2rem;
-    margin: 1rem;
-    font-size: 3rem;
-    font-style: bold;
-    border-style: 2px solid black;
-    border-radius: 50%;
-    box-shadow: black;
-    float-right; 
-    display: inline;
-}
-
-
-
-/* ul {
-    list-style-type: none;
-    max-width: 50%;
-    padding: 0.5rem;
-    background-color: black;
-    margin-left: auto;
-    margin-right: auto;
-} */
 
 nav a {
     display: inline;
@@ -59,7 +38,33 @@ nav a {
 
 }
 
+/* main {
+    margin: 1rem;
+} */
 
+h2 {
+    padding-top: 10rem;
+}
+
+.button-wrapper {
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: #E4572E;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-style: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 5px 10px;
+    text-transform: uppercase;
+    display: inline;
+    text-align: center;
+}
 
 .yiddish {
     direction: rtl;
@@ -79,7 +84,9 @@ nav a {
     display: block;
 }
 
-
+main a {
+    color:rgb(207, 103, 17)
+}
 
 
 
@@ -87,18 +94,44 @@ nav a {
 /*project gallery*/
 
 .project-container {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row reverse;
+    min-width: 100%;
+    
+    
 }
 
 figure {
-    background-color:lightblue;
+    
     height: 10em;
     width: 10em;
     padding: 1rem;
     object-fit: contain;
     text-align: center;
+    min-width:100%;
+    background-color: rgb(207, 103, 17);
+}
+
+figure img {
+    max-height: 15rem;
+    
+}
+
+@media screen and (min-width: 1224px) {
+    
+    img {
+        background-color:lightblue;
+        filter: grayscale(100%);
+    }
+    
+    img:hover {
+        filter: grayscale(0%);
+    }
+    
+figure:hover {
+    background-color: rgb(207, 103, 17);
+   }
 }
 
 figcaption {
@@ -106,18 +139,8 @@ figcaption {
     font-weight: bold
 }
 
-figure:hover {
- background-color: rgb(207, 103, 17)
-}
 
-img {
-    max-height: 8rem;
-    filter: grayscale(100%);
-}
 
-img:hover {
-    filter: grayscale(0%);
-}
 
 /* about me */
 
