@@ -85,7 +85,7 @@ button {
 }
 
 main a {
-    color:rgb(207, 103, 17)
+    color: white;
 }
 
 
@@ -95,13 +95,19 @@ main a {
 
 .project-container {
     display: flex;
-    flex-direction: row reverse;
-    width: 100%;
+    flex-flow: column wrap;
+    max-height: 200rem;
+    /* background-color: dodgerblue; */
+    align-content: center;
+    margin: 0;
+    padding: 0.5rem;
 }
 
 figure {
     min-width:100%;
-    border: black solid;
+    /* border: black solid; */
+    text-align: left;
+    flex-wrap: wrap;
 }
 
 figure img {
@@ -117,21 +123,19 @@ figcaption {
 
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .project-container{
         flex-wrap: wrap;
-}    
+}     */
 
 @media screen and (min-width: 1224px) {
     
-
-    }
-    img {
+    figure img {
         background-color:lightblue;
         filter: grayscale(100%);
     }
     
-    img:hover {
+    figure img:hover {
         filter: grayscale(0%);
     }
     
