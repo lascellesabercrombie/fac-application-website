@@ -11,13 +11,13 @@
 
 <!--problems: 
   1) centered text resetting after lang switched back; 
-  2) big gaps where padding necessary for navigation; 
-  3) styling on project gallery (white on light blue) hard to read
+  [2) big gaps where padding necessary for navigation;] 
+  3) scaling up screensize should look more natural
   4) should reorient flex with change of lang on nav bar, project gallery, links; -->
 
 <body>
     <header>
-      <h1><span class="english">Alex Grafen</span><span class="yiddish hidden">אַלעקס גראַפֿן</span></h1>
+      <h1 id="test" ><span class="english">Alex Grafen</span><span class="yiddish hidden">אַלעקס גראַפֿן</span></h1>
      
       <nav>
         
@@ -138,12 +138,12 @@
 <!--Find Me-->
 <div id="find-me">
 <h2><span class="english">Find Me</span><span class="yiddish hidden">געפֿין מיך</span></h2>
-
+<div class="link-container">
     <a href="https://www.codecademy.com/profiles/avong"><img src="./images/codecademy-icon.jpg" alt="Codecademy logo" class="profile-img-link"></a>
     <a href="https://www.freecodecamp.org/lascelles"><img src="./images/fcc_primary_small.jpg" alt="freeCodeCamp logo" class="profile-img-link"></a>
     <a href="https://github.com/lascellesabercrombie"><img src="./images/GitHub-Mark-64px.png" alt="GitHub logo" class="profile-img-link"></a>
-
   </div>
+</div>
 
 
 </main>
