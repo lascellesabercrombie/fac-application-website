@@ -4,7 +4,6 @@ let yiddish = document.querySelectorAll(".yiddish")
 let nav = document.querySelector("nav")
 let projectContainer = document.querySelector(".project-container")
 let linkContainer = document.querySelector(".link-container")
-let test = document.querySelector("#test")
 let intro = document.querySelector("#intro")
 
 function changeLanguage(language) {
