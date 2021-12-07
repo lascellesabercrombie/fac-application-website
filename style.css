@@ -20,6 +20,8 @@ header {
 h1 {
     color: #E4572E;
     text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    word-spacing: 0.3rem;
 }
 
 
