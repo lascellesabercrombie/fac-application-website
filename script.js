@@ -20,19 +20,28 @@ function changeLanguage(language) {
       return language;
 }
 
-function changeAlignment() {
-if (nav.style.flexFlow = "row wrap"){
-nav.style.flexFlow = "row-reverse wrap";
-// linkContainer.style.flexFlow = "row-reverse wrap";
-}
-else if (nav.style.flexFlow = "row-reverse wrap") {
-  nav.style.flexFlow = "row wrap";
-}
+function changeFlowAlignment(container) {
+// if (nav.style.flexFlow = "row wrap"){
+// nav.style.flexFlow = "row-reverse wrap";
+// // linkContainer.style.flexFlow = "row-reverse wrap";
+// }
+// else if (nav.style.flexFlow = "row-reverse wrap") {
+//   nav.style.flexFlow = "row wrap";
+// }
 // else if (test.classList.contains("english")) {
 // nav.style.flexFlow = "row wrap";
 // linkContainer.style.flexFlow = "row wrap";
 // }
 
+
+if (container.classList.contains("english-container")) {
+  container.classList.remove("english-container");
+  container.classList.add("yiddish-container");
+}
+else {
+   container.classList.remove("yiddish-container");
+  container.classList.add("english-container") 
+}
 }
 
 //what i may want is to have a class fed in generically that
@@ -48,15 +57,9 @@ else if (nav.style.flexFlow = "row-reverse wrap") {
 function langChanger() {
   changeLanguage(english);
   changeLanguage(yiddish);
-  // changeAlignment(english)
-  // changeAlignment(yiddish);
+  changeFlowAlignment(nav);
+  changeFlowAlignment(projectContainer);
 }
 
-languageButton.addEventListener('click', langChanger)
-languageButton.addEventListener('click', changeAlignment)
 
-/*a function that changes elements with 
-lang="en" to .hidden = true and lang="yi" 
-to .hidden = false and vice versa when 
-clicked again
-*/
+languageButton.addEventListener('click', langChanger)

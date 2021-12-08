@@ -12,7 +12,7 @@
 <!--problems: 
   2) pictures appearing in front of navbar when scaled up
   3) scaling up screensize should look more natural
-  4) should reorient flex with change of lang on nav bar, project gallery, links; 
+  4) should reorient flex with change of lang on links; 
   5) justify paragraph text? 
 6) diff font?
 7) borders to paragraphs?-->
@@ -21,7 +21,7 @@
     <header>
       <h1><span class="english centered">Alex Grafen</span><span class="yiddish hidden centered">אַלעקס גראַפֿן</span></h1>
      
-      <nav>
+      <nav class="english-container yiddish-container">
         
         <a href="#about-me"><span class="english">About Me</span><span class="yiddish hidden">װעגן מיך</span></a>
         <a href="#project-gallery"><span class="english">Project Gallery</span><span class="yiddish hidden">גאַלעריִע פֿון פּראָיִעקטן</span></a>
@@ -33,7 +33,7 @@
 
 <main>
 <div id="intro">
-  <h2><span class="english leftalign">Welcome to my application website!</span><span class="yiddish hidden">שלום עליכם, מײַן גאַסט! </span> </h2>
+  <h2><span class="english">Welcome to my application website!</span><span class="yiddish hidden">שלום עליכם, מײַן גאַסט! </span> </h2>
   <h3><span class="english">Follow one of the links below, or click the button to read on in Yiddish</span><span class="yiddish hidden">טו אַ קליק אױף די לינקס אָדער טו אַ קליק אױפֿן קנעפּל צו איבערזעצן אױף ענגליש</span></h3>
 </div>
 
@@ -65,7 +65,7 @@
 <div id="project-gallery"  data-offset="100">
 <h2><span class="english">Project Gallery</span><span class="yiddish hidden">גאַלעריִע פֿון פּראָיִעקטן</span></h2>
 
-<div class="project-container"> 
+<div class="project-container english-container yiddish-container"> 
 
   <figure>
     <a href="https://lascellesabercrombie.github.io/bill-griffiths-tribute-page/" id="griffiths"><img src="./images/griffiths-thumbnail.jpg" class="project-image" alt="cover of poetry pamphlet by Bill Griffiths">
@@ -138,18 +138,16 @@
 </div>
 
 <!--Find Me-->
-<div id="find-me">
-<h2><span class="english">Find Me</span><span class="yiddish hidden">געפֿין מיך</span></h2>
-<div class="link-container">
-    <a href="https://www.codecademy.com/profiles/avong"><img src="./images/codecademy-icon.jpg" alt="Codecademy logo" class="profile-img-link"></a>
-    <a href="https://www.freecodecamp.org/lascelles"><img src="./images/fcc_primary_small.jpg" alt="freeCodeCamp logo" class="profile-img-link"></a>
-    <a href="https://github.com/lascellesabercrombie"><img src="./images/GitHub-Mark-64px.png" alt="GitHub logo" class="profile-img-link"></a>
-  </div>
-</div>
-
 
 </main>
-<footer><!--do I want anything here?--> </footer>
+<footer id="find-me">
+  <h2><span class="english">Find Me</span><span class="yiddish hidden">געפֿין מיך</span></h2>
+  <div class="link-container">
+      <a href="https://www.codecademy.com/profiles/avong"><img src="./images/codecademy-icon.jpg" alt="Codecademy logo" class="profile-img-link"></a>
+      <a href="https://www.freecodecamp.org/lascelles"><img src="./images/fcc_primary_small.jpg" alt="freeCodeCamp logo" class="profile-img-link"></a>
+      <a href="https://github.com/lascellesabercrombie"><img src="./images/GitHub-Mark-64px.png" alt="GitHub logo" class="profile-img-link"></a>
+    </div>
+</footer>
 </body>
 <script src="script.js"></script>
 </html>
