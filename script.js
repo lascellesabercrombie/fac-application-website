@@ -4,7 +4,6 @@ let yiddish = document.querySelectorAll(".yiddish")
 let nav = document.querySelector("nav")
 let projectContainer = document.querySelector(".project-container")
 let linkContainer = document.querySelector(".link-container")
-let intro = document.querySelector("#intro")
 
 function changeLanguage(language) {
     language.forEach((element) => {
@@ -21,18 +20,6 @@ function changeLanguage(language) {
 }
 
 function changeFlowAlignment(container) {
-// if (nav.style.flexFlow = "row wrap"){
-// nav.style.flexFlow = "row-reverse wrap";
-// // linkContainer.style.flexFlow = "row-reverse wrap";
-// }
-// else if (nav.style.flexFlow = "row-reverse wrap") {
-//   nav.style.flexFlow = "row wrap";
-// }
-// else if (test.classList.contains("english")) {
-// nav.style.flexFlow = "row wrap";
-// linkContainer.style.flexFlow = "row wrap";
-// }
-
 
 if (container.classList.contains("english-container")) {
   container.classList.remove("english-container");
@@ -43,16 +30,6 @@ else {
   container.classList.add("english-container") 
 }
 }
-
-//what i may want is to have a class fed in generically that
-//i then make more specific in a second function
-//to limit repetition
-//but first i need to work out the project gallery, i think
-//maybe better done with classes
-
-//if language detected is yiddish, then flexboxes (navbar, project gallery and end links)
-//should change direction
-//if english, then back
 
 function langChanger() {
   changeLanguage(english);
