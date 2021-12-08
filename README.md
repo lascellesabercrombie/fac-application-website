@@ -6,7 +6,16 @@ A website and application for the Founders and Coders programme. View the live w
 
 ## Background
 
-The main distinctive feature of this website is the big button allowing the viewer to switch between English and Yiddish versions of the website. I talk a bit more about the motivation for the feature on the website. One aspect that made it particularly interesting to me was that Yiddish is written right to left. I was curious about how this would play out in terms of website design. 
+Perhaps the most distinctive feature of this website is the big button allowing the viewer to switch between English and Yiddish versions of the website. I talk a bit more about the motivation for the feature on the website. One aspect that made me particularly curious to experiment with such a button was that Yiddish is written right to left. I wanted to see how this would play out in terms of website design. I found [this article](https://medium.muz.li/web-design-for-right-to-left-languages-the-basics-287329d508cf) useful for thinking about some of what this process would require.
+
+On clicking the button, two main things happen: 
+
+1. The website hides the English text and reveals the Yiddish text.
+2. The flexbox containers of the navigation bar and the project gallery change direction, to make a more intuitive reading experience for the reader in Yiddish. 
+
+On clicking again, these things change back.
+
+In the case of (1) and (2), the change was effected through JS functions applying and removing CSS classes from elements in the HTML. 
 
 ## Requirements
 
@@ -34,4 +43,9 @@ The website was designed to fulfil [these requirements](https://www.foundersandc
 
 
 
+## Acknowledgements
+
+I benefited a lot from FAC's workshops and meetups. I owe particular thanks to Petra and Raymond for their help on the project gallery, and to Sonia and Danilo for their help in thinking through some of the early stages of how the button might be set up.
+
 ## Notes
+
