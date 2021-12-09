@@ -6,29 +6,29 @@ let projectContainer = document.querySelector(".project-container")
 let linkContainer = document.querySelector(".link-container")
 
 function changeLanguage(language) {
-    language.forEach((element) => {
-      if (element.classList.contains("hidden")) {
-        element.classList.remove("hidden");
-        element.classList.add("visible");}
-      else {
-        element.classList.remove("visible");
-        element.classList.add("hidden");}
-      }
-
-      );
-      return language;
+  language.forEach((element) => {
+    if (element.classList.contains("hidden")) {
+      element.classList.remove("hidden");
+      element.classList.add("visible");
+    }
+    else {
+      element.classList.remove("visible");
+      element.classList.add("hidden");}
+    }
+  );
+  return language;
 }
 
 function changeFlowAlignment(container) {
 
-if (container.classList.contains("english-container")) {
-  container.classList.remove("english-container");
-  container.classList.add("yiddish-container");
-}
-else {
-   container.classList.remove("yiddish-container");
-  container.classList.add("english-container") 
-}
+  if (container.classList.contains("english-container")) {
+    container.classList.remove("english-container");
+    container.classList.add("yiddish-container");
+  }
+  else {
+    container.classList.remove("yiddish-container");
+    container.classList.add("english-container") 
+  }
 }
 
 function langChanger() {
@@ -37,6 +37,5 @@ function langChanger() {
   changeFlowAlignment(nav);
   changeFlowAlignment(projectContainer);
 }
-
 
 languageButton.addEventListener('click', langChanger)

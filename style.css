@@ -52,10 +52,7 @@ figcaption {
     padding: 0rem 0.5rem 0rem 0.5rem;
 }
 
-/* @media screen and (min-width: 768px) {
-    .project-container{
-        flex-wrap: wrap;
-}     */
+/*laptop browser view*/
 
 @media screen and (min-width: 1224px) {
     
@@ -101,8 +98,7 @@ figure:hover {
    }
 }
 
-
-
+/*header material*/
 
 header {
     border: black solid;
@@ -122,10 +118,8 @@ h1 {
     text-align: center;
 }
 
-
 nav {
     display: flex;
-    /* flex-flow: row wrap; */
     justify-content: space-around;
 
 }
@@ -144,6 +138,8 @@ nav a {
     text-transform: uppercase;
     color: black;
 }
+
+/*main material*/
 
 main {
     margin: 1rem;
@@ -173,8 +169,6 @@ button {
     display: inline;
     text-align: center;
 }
-
-
 
 .hidden {
     display: none;
