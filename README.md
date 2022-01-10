@@ -12,6 +12,8 @@ The website has two main text-sections: an About Me and my specific reasons for 
 
 ### The Button
 
+![image of button](/images/button-english-image.jpg)
+
 Perhaps the most distinctive feature of this website, however, is the big button allowing the viewer to switch between English and Yiddish versions of the website. I talk a bit more about the motivation for the feature on the website. One aspect that made me particularly curious to experiment with such a button was that Yiddish is written right to left. I wanted to see how this would play out in terms of website design. I found [this article](https://medium.muz.li/web-design-for-right-to-left-languages-the-basics-287329d508cf) useful for thinking about some of what this process would require.
 
 On clicking the button, two main things happen: 
